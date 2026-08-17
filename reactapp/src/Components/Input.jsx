@@ -1,7 +1,8 @@
 import React from "react";
- function Input(props) {
+ function Input({...rest}) {
     return <>
-    <input  name={props.name} type={props.type} placeholder={props.placeholder} className={props.className}/>
+    <input {...rest}/>
+     {/* name={props.name} type={props.type} placeholder={props.placeholder} className={props.className} */}
     </>
  }
 
